@@ -1,0 +1,24 @@
+{
+     
+  "home": "Home",
+  "explore": "Esplora",
+  "about": "Info.",
+  "play": "GIOCA",
+
+"startBtn": "Inizia ora!",
+
+  "text1": "LevelUp è un'applicazione web di gamification che trasforma le tue abitudini e i tuoi obiettivi in entusiasmanti missioni.",
+  "text2": "Completando sfide della vita reale, guadagni ricompense nel gioco, motivandoti a seguire il tuo programma e raggiungere risultati sempre maggiori.",
+  "text3": "Cosa stai aspettando? È ora di fare LEVEL UP e trasformare la tua produttività in un'epica avventura!",
+
+
+    "contact": "Contattaci",
+    "privacy": "Politica sulla privacy",
+    "team": "Il nostro team",
+
+"t1":"Inizia l'avventura con il tuo personaggio base",
+"t2":"Conquista le sfide e raggiungi la grandezza",
+"t3":"Sblocca avatars affascinanti per una motivazione inarrestabile",
+"t4":"Aggiungi i tuoi amici e controlla se sono più produttivi di te"
+
+}

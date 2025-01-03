@@ -1,0 +1,20 @@
+push graphic-context
+compliance "SVG"
+fill "black"
+fill-opacity 1
+stroke "none"
+stroke-width 1
+stroke-opacity 1
+fill-rule nonzero
+viewbox 0 0 17 34
+affine 1 0 0 1 0 0
+push graphic-context
+affine 0.1 0 0 -0.1 0 34
+fill "#000000"
+stroke "none"
+push graphic-context
+class "path"
+path "M0 180 l0 -140 80 0 80 0 0 50 c0 49 -1 50 -30 50 l-30 0 0 90 0 90 -50 0 -50 0 0 -140z m88 38 l3 -88 30 0 c24 0 30 -4 27 -17 -3 -15 -14 -18 -68 -18 l-65 0 -3 94 c-1 52 0 101 3 108 3 9 17 13 37 11 l33 -3 3 -87z"
+pop graphic-context
+pop graphic-context
+pop graphic-context

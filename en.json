@@ -1,0 +1,21 @@
+{
+    
+  "home": "Home",
+  "explore": "Explore",
+  "about": "About",
+  "play": "PLAY",
+
+"startBtn": "Start now!",
+
+  "text1": "LevelUp is a gamify web application that turns your tasks and goals into exciting quests.",
+  "text2": "By completing real-life challenges, you earn rewards in the game, motivating you to follow your schedule and accomplish more.",
+  "text3": "What are you waiting for? It's time to LEVEL UP and transform your productivity into an epic adventure!",
+    "contact": "Contact Us",
+    "privacy": "Privacy Policy",
+    "team": "Our Team",
+    "t1":"Embark on an epic quest with your starter",
+"t2":"Conquer tasks and achieve greatness",
+"t3":"Unlock captivating avatars for unstoppable motivation",
+"t4":"Add friends and check if their score is higher than yours"
+
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" media="(min-width:21px)"/>
+    <link rel="stylesheet" href="style_mobile.css" media="(max-width:993px)"/>
+    <link href="https://fonts.cdnfonts.com/css/8bit-wonder" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.cdnfonts.com/css/square-dance" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/smw-text-nc" rel="stylesheet">        
+</head>
+
+<body class="light">
+  <!-- codice per la navbar e i suoi items -->
+  <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent">
+    <div class="container-fluid navbar-container">
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#parellax" data-lang-key="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#showcase" data-lang-key="explore">Explore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-lang-key="about">About</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item play-btn">
+            <button class="btn btn-primary">
+              <a href="./login/login_page.html" data-lang-key="play">PLAY</a>
+            </button>
+          </li>
+          <li class="nav-item checkbox-item">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </li>
+          <li class="nav-item">
+            <button id="lang" onclick="changeLanguage()"></button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- mobile -->
+      <div class="mobile-toggler">
+        
+        <div class="checkbox-language-group">
+        <li class="nav-item checkbox-item">
+          <input type="checkbox" class="checkbox" id="checkbox2">
+          <label for="checkbox2" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+          </label>
+        </li>
+        <button id="lang-mobile" onclick="changeLanguage()"></button>
+         </div>
+         <button class="navbar-toggler mobile-toggler-button" type="button" data-bs-toggle="modal" data-bs-target="#navbModal">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    </div>
+  </nav>
+  
+  <div class="modal fade" id="navbModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-line">
+            <a href="#parellax">Home</a>
+          </div>
+          <div class="modal-line">
+            <a href="#showcase"data-lang-key="explore">Explore</a>
+          </div>
+          <div class="modal-line">
+            <a href="#about"data-lang-key="about">About</a>
+          </div>
+          <a href="./login/login_page.html" class="btn btn-primary" data-lang-key="play">Play</a>
+
+        </div>
+        <div class="modal-footer">
+                <a href="#"><i class="fa fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-brands fa-discord"></i></a>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- section per la parte iniziale, con BG usando effetto parallax  -->
+      <section class="parellax"id="parellax">
+        
+        <img src="./Img/parellax3.jpg" id="cielo">
+        <img src="./Img/montagne.png" id="montagne">
+        <h1 id='title' class="col-12">Level UP</h1>
+        <img src="./Img/terreno.png" id="terreno">
+        <button class="start"><a href="./login/login_page.html" data-lang-key="startBtn">Start now!</a></button>
+      </section>
+      
+  <!-- section per il showcase, con un slider che fa una animazione cambiando la class 'hidden' -->
+      <section id="showcase">
+        <div class="container teste-show">
+          <div class="row justify-content-between align-items-center">
+            <a href="" id="walk-left" class="col-1">
+              <div id="l-arrow">
+                <i class="fas fa-regular fa-angle-left"></i>
+              </div>
+            </a>
+            <div id="showcase-text" class="col-6">
+              <div id="t1" class="text-with-image">
+                <div data-lang-key="t1" >Embark on an epic quest with your starter</div>
+                <img src="char/char0.png" alt="" id="starter" >
+              </div>
+              <div id="t2" class="text-with-image hidden">
+                <div data-lang-key="t2">Conquer tasks and achieve greatness</div>
+                <img src="./Img/tasks.png" alt="" id="tasks">
+              </div>
+              <div id="t3" class="text-with-image hidden">
+                <div data-lang-key="t3">Unlock captivating avatars for unstoppable motivation</div>
+                <img src="./Img/items.png" alt="" id="items">
+              </div>
+              <div id="t4"class="text-with-image hidden">
+                <div data-lang-key="t4">Add friends and check if their score is higher than yours </div>
+                <img src="./Img/social.png" alt=""id="social">
+              </div>
+            </div>
+            
+            <a href="" id="walk-right" class="col-1">
+              <div id="r-arrow">
+                <i class="fas fa-regular fa-angle-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      
+
+<!-- section per il testo spiegando l'idea dell'applicazione, con una funzione che 'scrive' le lettere in tempo reale -->
+    <section id="about">
+      <div class="typing">
+        <p id="typing-text" data-lang-key="text1">LevelUp is a gamify web application that turns your tasks and goals into exciting quests.</p>
+        <p id="typing-text2"data-lang-key="text2">By completing real-life challenges, you earn rewards in the game, motivating you to follow your schedule and accomplish more.</p>
+        <p id="typing-text3"data-lang-key="text3">What are you waiting for? It's time to LEVEL UP and transform your productivity into an epic adventure!</p>
+      </div>
+    </section>
+    
+  
+    
+    <footer class="footer">
+            <div class="socialIcons">
+                <a href="#"><i class="fa fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-brands fa-discord"></i></a>
+
+            </div>
+           <div class="footerNav">
+            <ul>
+                <li><a href="#parellax">Home</a></li>
+                <li><a href="./footer/contact.html"data-lang-key="contact">Contact Us</a></li>
+                <li><a href="#"data-lang-key="privacy">Privacy Policy</a></li>
+                <li><a href="./footer/team.html"data-lang-key="team">Our Team</a></li>
+            </ul>
+            </div> 
+            <div class="footerBottom">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>; Designed by Pedro and Natalia</p>
+            </div>
+        
+    </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+<script src="index_script.js"></script>
+</body>
+
+</html>
+
